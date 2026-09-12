@@ -278,36 +278,87 @@ body {
 }
 
 /* ===== 10. RESPONSIVE ===== */
+/* ===== RESPONSIVE PARA SA PHONE ===== */
 @media (max-width: 700px) {
+    /* 1. Ayusin ang Navbar */
     .navbar {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: column;      /* Pumila vertically */
+        gap: 15px;                  /* Space sa pagitan */
+        padding: 15px 5%;           /* Adjust padding */
+        text-align: center;         /* Center lahat ng text */
+    }
+
+    .logo {
+        font-size: 20px;            /* Mas maliit na logo */
     }
 
     .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: center;    /* Center yung links */
+        flex-wrap: wrap;            /* Pumila sa next line kung kailangan */
+        gap: 15px;                  /* Space sa pagitan ng links */
+    }
+
+    .btn-nav {
+        padding: 8px 20px;          /* Mas maliit na button */
+        font-size: 14px;            /* Mas maliit na text */
+    }
+
+    /* 2. Ayusin ang Hero Section */
+    .hero {
+        padding: 40px 5% 30px;      /* Bawasan ang space sa taas */
+    }
+
+    .hero-image {
+        width: 160px;               /* Mas maliit na picture sa phone */
+        height: 160px;
     }
 
     .hero-title {
-        font-size: 36px;
+        font-size: 36px;            /* Mas maliit na title */
     }
 
     .hero-tagline {
-        font-size: 16px;
+        font-size: 16px;            /* Mas maliit na tagline */
+        letter-spacing: 1px;
     }
 
+    .hero-desc {
+        font-size: 14px;            /* Mas maliit na description */
+        padding: 0 10px;            /* Konting space sa gilid */
+    }
+
+    /* 3. Ayusin ang Stats */
     .stats {
-        gap: 30px;
+        gap: 25px;                  /* Bawasan ang space */
+        padding: 30px 5%;
     }
 
     .stat-number {
-        font-size: 28px;
+        font-size: 28px;            /* Mas maliit na number */
     }
 
-    .section-title {
-        font-size: 24px;
+    /* 4. Ayusin ang Videos Grid */
+    .video-grid {
+        grid-template-columns: 1fr; /* Isang column lang sa phone */
+        gap: 20px;
+    }
+
+    .video-card {
+        padding: 20px;              /* Adjust padding */
+    }
+
+    /* 5. Ayusin ang Contact Section */
+    .contact-links {
+        max-width: 100%;            /* Full width sa phone */
+    }
+
+    .contact-card {
+        padding: 15px 20px;         /* Adjust padding */
+    }
+
+    /* 6. Ayusin ang Footer */
+    .footer {
+        padding: 30px 5%;
     }
 }
 /* ===== HERO SECTION ===== */
