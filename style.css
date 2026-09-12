@@ -1,0 +1,351 @@
+/* ===== 1. RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== 2. BODY ===== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #38020c, #000000);
+    color: white;
+    line-height: 1.6;
+}
+
+/* ===== 3. NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(26, 2, 8, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(216, 194, 197, 0.2);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #a88c91;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: rgb(205, 152, 160);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dedada;
+}
+
+.btn-nav {
+    padding: 10px 25px;
+    background: #ece5e7;
+    color: #480707 !important;
+    border-radius: 25px;
+    font-weight: 600 !important;
+}
+
+.btn-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(79, 8, 9, 0.5);
+}
+
+/* ===== 4. HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 100px 5% 80px;
+    max-width: 900px;
+    margin: 0auto;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #e7dfe0;
+    margin-bottom:0px;
+    text-shadow: 0 0 30px rgba(237, 225, 226, 0.5);
+
+}
+
+.hero-tagline {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #e0d3d7;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #f6f1f2;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(11, 1, 1, 0.6);
+}
+
+/* ===== 5. STATS SECTION ===== */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ebf1f3;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #b0b0c0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===== 6. VIDEOS SECTION ===== */
+.videos {
+    padding: 80px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c4c7c8;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(230, 237, 239, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(180, 7, 7, 0.5);
+    box-shadow: 0 20px 40px rgba(200, 6, 6, 0.15);
+}
+
+.video-thumbnail {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.video-title {
+    font-size: 18px;
+    color: #eee9e9;
+    margin-bottom: 8px;
+}
+
+.video-desc {
+    font-size: 14px;
+    color: #ece7e7;
+    margin-bottom: 10px;
+}
+
+.video-meta {
+    font-size: 12px;
+    color: #e6dfe1;
+    margin-bottom: 15px;
+}
+
+.video-link {
+    color: #edf4f5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.video-link:hover {
+    color: white;
+}
+
+/* ===== 7. ABOUT SECTION ===== */
+.about {
+    padding: 80px 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 16px;
+    color: white;
+    line-height: 1.9;
+}
+
+/* ===== 8. CTA SECTION ===== */
+.cta {
+    text-align: center;
+    padding: 80px 5%;
+    background: rgba(32, 3, 10, 0.05);
+    border-top: 1px solid rgba(90, 4, 19, 0.2);
+    border-bottom: 1px solid rgba(97, 7, 9, 0.2);
+}
+
+.cta-title {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cta-desc {
+    font-size: 16px;
+    color:  white;
+    margin-bottom: 30px;
+}
+
+/* ===== 9. FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 40px 5%;
+    color: #d4c1c5;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* ===== 10. RESPONSIVE ===== */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 80px 5% 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* ← CENTER SA FLEX */
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.hero-image-wrapper {
+    position: relative;
+    display: block;
+    margin: 0 auto 25px;        /* ← CENTER SA BLOCK */
+    width: 200px;
+    height: 200px;
+}
+
+/* ===== IMAGE ===== */
+.hero-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff0033;
+    box-shadow: 0 0 40px rgba(255, 0, 51, 0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.hero-image:hover {
+    transform: translateY(-10px) scale(1.08) rotate(-3deg);
+    box-shadow: 
+        0 20px 60px rgba(255, 0, 51, 0.8),
+        0 0 100px rgba(255, 0, 51, 0.4);
+    border-color: #ffffff;
+}
