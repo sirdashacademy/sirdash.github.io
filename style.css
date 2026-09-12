@@ -393,10 +393,3 @@ body {
     cursor: pointer;
 }
 
-.hero-image:hover {
-    transform: translateY(-10px) scale(1.08) rotate(-3deg);
-    box-shadow: 
-        0 20px 60px rgba(255, 0, 51, 0.8),
-        0 0 100px rgba(255, 0, 51, 0.4);
-    border-color: #ffffff;
-}
